@@ -1,12 +1,10 @@
 == README
 
-How often do you look in your pantry and wonder what you can create with the food you have? If you're me, the answer is suspiciously high.
-
-And since everything is a nail to a hammer, I'm using Rails to make cooking decisions easier.  
+How often do you look in your pantry and wonder what you can create with the food you have? If you're me, the answer is suspiciously high. And since everything is a nail to a hammer, I'm using Rails to make cooking decisions easier.  
 
 Tell Random Wok what's in your pantry and it'll serve you a recipe. 
 
 Random Wok...something's cooking in 2016.
 
-<h6>(note: front-end will eventually be replated with Angular)</h6>
+(note: front-end will eventually be replated with Angular)
 
