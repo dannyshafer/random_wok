@@ -8,3 +8,5 @@ Tell Random Wok what's in your pantry and it'll serve you a recipe.
 
 Random Wok...something's cooking in 2016.
 
+<h6>(note: front-end will eventually be replated with Angular)</h6>
+
