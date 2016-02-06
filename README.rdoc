@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How often do you look in your pantry and wonder what you can create with the food you have? If you're me, the answer is suspiciously high.
 
-Things you may want to cover:
+And since everything is a nail to a hammer, I'm using Rails to make cooking decisions easier.  
 
-* Ruby version
+Tell Random Wok what's in your pantry and it'll serve you a recipe. 
 
-* System dependencies
+Random Wok...something's cooking in 2016.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
