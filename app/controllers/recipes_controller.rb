@@ -25,7 +25,10 @@ class RecipesController < ApplicationController
   # POST /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
-
+    recipe = HTTParty.get("http://food2fork.com/api/search?key=" + ENV["FOOD2FORK_API"] + "&q=shredded%20chicken")
+    puts "this is the recipe "*100
+    puts recipe.inspect
+    puts "this is the recipe "*100
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
