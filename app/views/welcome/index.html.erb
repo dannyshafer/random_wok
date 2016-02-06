@@ -1,0 +1,17 @@
+<h1>SOMETHING IS COOKING IN 2016</h1>
+
+<h3>WELCOME TO RANDOM WOK</h3>
+
+<h5>Enter some ingredients below to get recpies:</h5>
+<%= form_for @recipe do |f| %>
+  <%= f.label :ingredient1 %>:
+  <%= f.text_field :ingredient1 %><br />
+	
+  <%= f.label :ingredient2 %>:
+  <%= f.text_field :ingredient2 %><br />
+
+  <%= f.label :ingredient3 %>:
+  <%= f.text_field :ingredient3 %><br />
+
+  <%= f.submit %>
+<% end %>
