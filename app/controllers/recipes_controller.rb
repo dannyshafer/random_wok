@@ -24,8 +24,6 @@ class RecipesController < ApplicationController
   # POST /recipes
   # POST /recipes.json
   def create
-    # pseudocoding! yay
-    # The Recipe.new isn't getting made with the form params but with the response of the api call. This means that the params have to be converted to a format that is recognizable by the api and then sent to the HTTParty
     query = ["$q="]
     recipe_params.each do |ingredient|
       ingredient = ingredient[1].split(" ")
@@ -35,8 +33,9 @@ class RecipesController < ApplicationController
       query << ingredient
     end 
     query = query.join("")
+    recipe = HTTParty.get("http://food2fork.com/api/search?key=" + ENV["FOOD2FORK_API"] + query)
+    # Iterate through the results and create a recipe for each of the responses
     @recipe = Recipe.new(recipe_params)
-    # recipe = HTTParty.get("http://food2fork.com/api/search?key=" + ENV["FOOD2FORK_API"] + query)
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
