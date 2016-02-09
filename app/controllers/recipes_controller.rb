@@ -36,6 +36,7 @@ class RecipesController < ApplicationController
     recipe = HTTParty.get("http://food2fork.com/api/search?key=" + ENV["FOOD2FORK_API"] + query)
     # Iterate through the results and create a recipe for each of the responses
     @recipe = Recipe.new(recipe_params)
+    @recipe.user = current_user
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
